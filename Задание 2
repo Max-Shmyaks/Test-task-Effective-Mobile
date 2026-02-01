@@ -1,0 +1,79 @@
+Задание 2 : Проектирование API
+Метод: GET
+URL: api/v1/partners_shops
+Пример запроса на сервер: 
+https://{домен}/api/v1/partners_shops
+
+Response Body:
+200 OK
+{
+  "data":{
+    {
+        {
+          "id": "shops_1",
+          "name": "METRO",
+          "logo_url": "https://metro-shop.ru/logotypes/metro.png" ,
+          "delivery":{
+            "is_available": true,
+            "type": "today",
+            "description": "Ближайшая доставка сегодня 21:00-23:00",
+            "details":{
+                "start":"21:00",
+                "end":"23:00",
+                "date":"2026-01-31"
+            }
+          },
+          "external_url":"https://metro-shop.ru/delivery"
+        },
+        {
+          "id": "shops_2",
+          "name": "Ашан",
+          "logo_url": "https://Ashan.ru/logotypes/ashan.png" ,
+          "delivery":{
+            "is_available": true,
+            "type": "today",
+            "description": "Ближайшая доставка сегодня 18:00-20:00",
+            "details":{
+                "start":"18:00",
+                "end":"20:00",
+                "date":"2026-01-31"
+            }
+          },
+          "external_url":"https://Ashan.ru/delivery" 
+        },
+        {
+          "id": "shops_3",
+          "name": "ВкусВилл",
+          "logo_url": "https://VkusVill.ru/logotypes/VkusVill.png" ,
+          "delivery":{
+            "is_available": true,
+            "type": "fast",
+            "description": "Быстрая доставка от 20 до 60 минут",
+            "details":{
+                "fast_start": 20,
+                "fast_end": 60,
+                "date":"2026-01-31"
+            }
+          },
+          "external_url":"https://VkusVill.ru/delivery"  
+        },
+        {
+          "id": "shops_4",
+          "name": "ВИКТОРИЯ",
+          "logo_url": "https://Victoria.ru/logotypes/Victoria.png" ,
+          "delivery":{
+            "is_available": true,
+            "type": "today",
+            "description": "Ближайшая доставка сегодня 17:00-19:00",
+            "details":{
+                "start":"17:00",
+                "end":"19:00",
+                "date":"2026-01-31"
+            }
+          },
+          "external_url":"https://Victoria.ru/delivery" 
+        }
+      
+    }
+        }
+}
